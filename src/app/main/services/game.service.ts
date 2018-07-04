@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class GameService {
   
-  private uri = 'https://get-started-node-akztxvaqyh.now.sh/games/add';
+  private uri = 'https://nodeapp-ngcclufnxt.now.sh/games/add';
+  // private uri = 'https://nodeappcesar.herokuapp.com/games/add';
   constructor(private http: HttpClient) { }
 
   addGame(name , price): void {
@@ -15,6 +16,10 @@ export class GameService {
       name: name,
       price: price
     };
+    // const headers = new HttpHeaders();
+    // headers.append('Access-Control-Allow-Headers', 'Content-Type');
+    // headers.append('Access-Control-Allow-Methods', 'GET');
+    // headers.append('Access-Control-Allow-Origin', '*');
     this.http.post(this.uri, obj).subscribe(res => console.log('Done'));
   }
 
