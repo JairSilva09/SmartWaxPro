@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class GameService {
-  private uri = 'https://nodeapp-isyasmvajh.now.sh/games/add';
+  private uri = 'https://nodeapp-ixbvpvjrjz.now.sh//games/add';
   // private uri = ' https://nodeapp-tpzbzfapmz.now.sh/games/add';
   constructor(private http: HttpClient) { }
   addGame(name, price): void {
