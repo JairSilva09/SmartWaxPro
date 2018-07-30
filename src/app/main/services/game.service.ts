@@ -6,13 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class GameService {
-  private uri = 'https://nodeapp-ixbvpvjrjz.now.sh//games/add';
-  // private uri = ' https://nodeapp-tpzbzfapmz.now.sh/games/add';
+  private uri = 'https://nodeapp-ixbvpvjrjz.now.sh/games/add';
   constructor(private http: HttpClient) { }
   addGame(name, price): void {
     const obj = {
-      name: 'name',
-      price: 'price'
+      name: name,
+      price: price
     };
     this.http.post(this.uri, obj).subscribe(res => console.log('Done'));
   }

@@ -2,10 +2,10 @@ export const locale = {
     lang: 'en',
     data: {
         'NAV': {
-            'APPLICATIONS': 'Applications',
-            'DASHBOARDS'  : 'Dashboards',
-            'CALENDAR'    : 'Calendar',
-            'ECOMMERCE'   : 'E-Commerce',
+            'APPLICATIONS': 'Main Menu',
+            'DASHBOARDS'  : 'Dashboard',
+            'CALENDAR'    : 'Profile',
+            'ECOMMERCE'   : 'Surveys',
             // 'ACADEMY'     : 'Academy',
             // 'MAIL'        : {
             //     'TITLE': 'Mail',

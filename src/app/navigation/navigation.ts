@@ -10,24 +10,24 @@ export const navigation: FuseNavigation[] = [
         children : [
             {
                 id       : 'dashboards',
-                title    : 'Dashboards',
+                title    : 'Profile',
                 translate: 'NAV.DASHBOARDS',
                 type     : 'collapsable',
                 icon     : 'dashboard',
-                children : [
-                    {
-                        id   : 'analytics',
-                        title: 'Analytics',
-                        type : 'item',
-                        url  : '/apps/dashboards/analytics'
-                    },
-                    {
-                        id   : 'project',
-                        title: 'Project',
-                        type : 'item',
-                        url  : '/apps/dashboards/project'
-                    }
-                ]
+                // children : [
+                //     {
+                //         id   : 'analytics',
+                //         title: 'Analytics',
+                //         type : 'item',
+                //         url  : '/apps/dashboards/analytics'
+                //     },
+                //     {
+                //         id   : 'project',
+                //         title: 'Project',
+                //         type : 'item',
+                //         url  : '/apps/dashboards/project'
+                //     }
+                // ]
             },
             {
                 id       : 'calendar',
@@ -43,46 +43,46 @@ export const navigation: FuseNavigation[] = [
                 translate: 'NAV.ECOMMERCE',
                 type     : 'collapsable',
                 icon     : 'shopping_cart',
-                children : [
-                    {
-                        id   : 'dashboard',
-                        title: 'Dashboard',
-                        type : 'item',
-                        url  : '/apps/e-commerce/dashboard'
-                    },
-                    {
-                        id        : 'products',
-                        title     : 'Products',
-                        type      : 'item',
-                        url       : '/apps/e-commerce/products',
-                        exactMatch: true
-                    },
-                    {
-                        id        : 'productDetail',
-                        title     : 'Product Detail',
-                        type      : 'item',
-                        url       : '/apps/e-commerce/products/1/printed-dress',
-                        exactMatch: true
-                    },
-                    {
-                        id        : 'orders',
-                        title     : 'Orders',
-                        type      : 'item',
-                        url       : '/apps/e-commerce/orders',
-                        exactMatch: true
-                    },
-                    {
-                        id        : 'orderDetail',
-                        title     : 'Order Detail',
-                        type      : 'item',
-                        url       : '/apps/e-commerce/orders/1',
-                        exactMatch: true
-                    }
-                ]
+                // children : [
+                //     {
+                //         id   : 'dashboard',
+                //         title: 'Dashboard',
+                //         type : 'item',
+                //         url  : '/apps/e-commerce/dashboard'
+                //     },
+                //     {
+                //         id        : 'products',
+                //         title     : 'Products',
+                //         type      : 'item',
+                //         url       : '/apps/e-commerce/products',
+                //         exactMatch: true
+                //     },
+                //     {
+                //         id        : 'productDetail',
+                //         title     : 'Product Detail',
+                //         type      : 'item',
+                //         url       : '/apps/e-commerce/products/1/printed-dress',
+                //         exactMatch: true
+                //     },
+                //     {
+                //         id        : 'orders',
+                //         title     : 'Orders',
+                //         type      : 'item',
+                //         url       : '/apps/e-commerce/orders',
+                //         exactMatch: true
+                //     },
+                //     {
+                //         id        : 'orderDetail',
+                //         title     : 'Order Detail',
+                //         type      : 'item',
+                //         url       : '/apps/e-commerce/orders/1',
+                //         exactMatch: true
+                //     }
+                // ]
             },
             {
                 id      : 'pricing',
-                title   : 'Pricing',
+                title   : 'Payments',
                 type    : 'collapsable',
                 icon    : 'attach_money',
                 children: [

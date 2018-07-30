@@ -25,14 +25,14 @@ import { PricingModule } from './main/pages/pricing/pricing.module';
 const appRoutes: Routes = [
     {
         path      : '**',
-        redirectTo: 'smart'
+        redirectTo: 'sample'
     },
     {
         path      : 'landing',
         loadChildren: './main/landing/landing.module#LandingModule'
     },
     {
-        path      : 'smart',
+        path      : 'sample',
         loadChildren: './main/smart/smart.module#SmartModule'
     },
     {
